@@ -1,1 +1,1097 @@
-<h1>Hello world</h1>
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+<title>Jose Scarnatto</title>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+<style>
+  /********************************************
+* 	reset from
+* 	http://meyerweb.com/eric/tools/css/reset/
+*******************************************/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/****************
+*	COMMONS
+****************/
+
+body,
+html {
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 13px;
+  color: #40484f;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.46153846;
+  text-align: left;
+  -webkit-text-size-adjust: 100%;
+}
+
+p {
+  display: block;
+}
+
+a {
+  color: #0095ff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0c65a5;
+  text-decoration: underline;
+}
+
+li {
+  list-style-type: square;
+  list-style-position: outside;
+  margin-left: 1.3em;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.67rem;
+}
+
+h3 {
+  font-size: 1.27rem;
+}
+
+em {
+  color: #757575;
+}
+
+blockquote {
+  margin-bottom: 1em;
+}
+
+strong {
+  font-weight: 700;
+}
+
+/* main container */
+
+#resume {
+  padding: 1.5rem;
+}
+
+/* every section wrapper */
+
+.section {
+  margin-bottom: 1rem;
+}
+
+section .location {
+  margin-right: 0.5em;
+  color: #606d76;
+  font-weight: 700;
+}
+
+#contact {
+  margin-top: 0.5rem;
+}
+
+#profiles .item {
+  padding: 0;
+}
+
+#header > #profiles,
+#header > #contact,
+#skills,
+#languages,
+#interests {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+}
+
+#header > div {
+  line-height: 1.5;
+}
+
+#header > div > div {
+  margin-right: 1.2em;
+}
+
+#header h1.name {
+  font-size: 2.8rem;
+  font-weight: 100;
+  line-height: 100%;
+}
+
+#header h2.label {
+  color: #202931;
+  font-size: 1.47rem;
+  font-weight: 300;
+}
+
+#header .image {
+  width: 11em;
+  float: right;
+  border-radius: 4px;
+}
+
+.main-summary {
+  background: #f1f8ff;
+  padding: 1.2em 1em;
+  margin-top: 1rem;
+}
+
+.main-summary p {
+  margin: 0;
+}
+
+.section-title {
+  display: inline-block;
+  background: #fff;
+  padding: 0 1em 0.3em 0;
+  color: #ff6d1f;
+  text-transform: uppercase;
+  font-weight: 600;
+  border: none;
+  font-size: 0.9rem;
+}
+
+.section > header {
+  position: relative;
+}
+
+.fa {
+  margin-right: 0.25em;
+}
+
+.section > header::after {
+  position: absolute;
+  left: 0;
+  top: 0.7em;
+  height: 1px;
+  background: #ccc;
+  content: "";
+  width: 100%;
+  z-index: -100;
+  display: block;
+}
+
+.section.main-summary > section {
+  margin: 0;
+}
+
+.section > section > header {
+  font-size: 1.38rem;
+  position: relative;
+  margin-top: 0.7em;
+}
+
+.section > section > header:first-of-type {
+  margin: 0;
+}
+
+.section > section > header .space-left {
+  position: absolute;
+  left: -1.56rem;
+  top: 5px;
+  color: #aaa;
+  line-height: 1;
+  opacity: 0;
+}
+
+.position,
+.company,
+.organization,
+.institution,
+.date,
+.area,
+.studyType,
+.title,
+.awarder {
+  display: inline;
+}
+
+.position,
+.studyType,
+.area,
+.title,
+.language,
+.name {
+  font-weight: 600;
+}
+
+.company::before,
+.institution::before,
+.organization::before,
+.awarder::before {
+  content: "at ";
+}
+
+.company,
+.institution,
+.organization,
+.awarder {
+  color: #606d76;
+  font-weight: 400;
+}
+
+.section header .date {
+  display: block;
+  font-size: 1rem;
+  padding: 0.1em 0;
+  color: #606d76;
+  font-weight: 400;
+}
+
+.keywords,
+.courses {
+  margin: 0.5em 0;
+}
+
+.keywords li,
+.courses li {
+  display: inline-block;
+  margin: 2px 2px 2px 0;
+  padding: 4px 5px 5px;
+  font-size: 0.9rem;
+  line-height: 1;
+  color: #3e6d8e;
+  background-color: #dfeaf1;
+  border: 0 solid #dfeaf1;
+  white-space: nowrap;
+}
+
+.keywords li:hover,
+.courses li:hover {
+  background: #dfeaf0;
+}
+
+.highlights {
+  margin: 1em 0 0 0;
+}
+
+.highlights > li > p {
+  margin-bottom: 0.5em;
+}
+
+.item {
+  overflow: hidden;
+}
+
+.gpa {
+  clear: both;
+  padding-bottom: 0.5em;
+}
+
+.fa.social {
+  font-size: 1.1em;
+}
+
+/* Social Media Brand Colors */
+
+.google-plus {
+  color: #dd4b39;
+}
+
+.tumblr {
+  color: #32506d;
+}
+
+.foursquare {
+  color: #0072b1;
+}
+
+.facebook {
+  color: #3b5998;
+}
+
+.linkedin {
+  color: #007bb6;
+}
+
+.pinterest {
+  color: #cb2027;
+}
+
+.dribbble {
+  color: #ea4c89;
+}
+
+.instagram {
+  color: #517fa4;
+}
+
+.twitter {
+  color: #00aced;
+}
+
+.soundcloud {
+  color: #ff3a00;
+}
+
+.wordpress {
+  color: #21759b;
+}
+
+.youtube {
+  color: #bb0000;
+}
+
+.github {
+  color: #171515;
+}
+
+.stack-overflow {
+  color: #828386;
+  position: relative;
+}
+
+.flickr {
+  color: #ff0084;
+}
+
+.reddit {
+  color: #ff4500;
+}
+
+.hacker-news {
+  color: #ff6600;
+}
+
+.stack-overflow::after {
+  position: absolute;
+  left: 0;
+  content: "\f16c";
+  color: #f68a1f;
+  overflow: hidden;
+  height: 100%;
+}
+
+.telegram {
+  color: #2291c3;
+}
+
+#languages .item,
+#skills .item,
+#interests .item {
+  width: 15em;
+  padding: 0 0.5em 0.5em 0;
+  border-bottom: none;
+}
+
+#skills .item {
+  width: 16em;
+}
+
+#skills .item .keywords {
+  width: 15em;
+}
+
+/* Skill chart */
+
+.level {
+  margin-bottom: 0.5em;
+}
+
+.level em {
+  padding-left: 0.2em;
+}
+
+.level .bar {
+  border: 1px solid #ddd;
+  display: block;
+  width: 10em;
+  height: 5px;
+  position: relative;
+}
+
+.level .bar::after {
+  position: absolute;
+  content: " ";
+  top: 0;
+  left: 0;
+  background: black;
+  height: 5px;
+}
+
+.level.beginner .bar::after {
+  background: #eb5f51;
+  width: 2.5em;
+}
+
+.level.intermediate .bar::after {
+  background: #ffdf1f;
+  width: 5em;
+}
+
+.level.advanced .bar::after,
+.level.fluent .bar::after {
+  background: #5cb85c;
+  width: 7.5em;
+}
+
+.level.master .bar::after,
+.level.native.speaker .bar::after {
+  background: #59c596;
+  width: 10em;
+}
+
+#references .item {
+  padding-left: 0.5em;
+  border-left: 5px solid #ff6d1f;
+}
+
+.toggle-item {
+  display: none;
+}
+
+.section > section > section {
+  margin-bottom: 0.5rem;
+}
+
+/******************
+*	HELPER CLASSES
+******************/
+
+.clear::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.display {
+  display: block;
+  opacity: 1 !important;
+}
+
+/****************
+*		TABLET
+****************/
+
+@media screen and (min-width: 602px) {
+  #resume {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .section header .date {
+    float: right;
+    font-weight: 600;
+    color: #000;
+  }
+}
+
+/****************
+*		LAPTOP
+****************/
+
+@media screen and (min-width: 1025px) {
+  li {
+    margin-left: 1.5em;
+  }
+  #resume {
+    width: 820px;
+    margin: 2rem auto;
+  }
+  .section > section > header .space-left {
+    opacity: 1;
+    cursor: pointer;
+  }
+  .section > section:not(.main-summary) {
+    margin-left: 1.67rem;
+  }
+  .toggle-item {
+    transform: translate(-9999px);
+  }
+  .toggle-item + label {
+    display: block;
+  }
+  .toggle-item:checked + label:after {
+    content: "\f0d7";
+  }
+  .toggle-item + label:after {
+    float: left;
+    cursor: pointer;
+    margin-left: -20px;
+    color: #aaa;
+    font-size: 16px;
+    font-weight: 900;
+    font-family: "Font Awesome 5 Free";
+    content: "\f0da";
+  }
+  .toggle-item ~ .item {
+    height: 0;
+    opacity: 0;
+  }
+  .toggle-item:checked ~ .item {
+    height: auto;
+    opacity: 1;
+    transition: all 0.5s linear;
+  }
+  .company::before,
+  .institution::before,
+  .organization::before,
+  .awarder::before {
+    content: "| ";
+  }
+  .header-left {
+    float: left;
+    width: 70%;
+    word-break: normal;
+  }
+  .section header .date {
+    padding: 0.2em;
+  }
+  .display {
+    display: none;
+  }
+  .display:not(.none) {
+    display: block;
+  }
+}
+
+@media print {
+  #resume {
+    margin: 0.1em;
+    padding: 0.1em;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+    line-height: 1.25;
+  }
+  @page {
+    margin: 1cm 1.4cm;
+  }
+  .item-count {
+    display: none;
+  }
+  .company::before,
+  .institution::before,
+  .organization::before,
+  .awarder::before {
+    content: "at ";
+  }
+  .main-summary {
+    padding: 0;
+    background: transparent;
+  }
+  .section {
+    margin: 0.8rem 0;
+    padding: 0;
+  }
+  .section header {
+    padding-bottom: 0.15rem;
+  }
+  .section .location {
+    padding-bottom: 0.15rem;
+  }
+  .section > section > section {
+    margin: 0 0 1em 0;
+  }
+  .section > section > section:last-of-type {
+    margin: 0;
+  }
+  .stack-overflow::after {
+    content: "";
+  }
+  .fa.social {
+    color: #828386;
+  }
+  ul {
+    margin-top: 0.4em;
+  }
+  ul,
+  li {
+    padding: 0;
+  }
+  ul.keywords li,
+  ul.courses li {
+    margin: 0;
+    padding: 0;
+    font-size: 0.8rem;
+    background: transparent;
+  }
+  ul.keywords li::after,
+  ul.courses li::after {
+    padding: 0 0 0 0.1rem;
+    content: " |";
+  }
+  ul.keywords::before,
+  ul.courses::before {
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+  #skills .item {
+    width: calc(100% / 3);
+    padding: 0;
+  }
+  .highlights {
+    margin: 0.5em 0 0 0;
+  }
+  ul.keywords::before {
+    content: "Skills acquired: ";
+  }
+  #skills .keywords::before {
+    content: none;
+  }
+  .section p {
+    margin: 0;
+    padding: 0;
+  }
+  ul.courses::before {
+    content: "Major courses: ";
+  }
+  ul.keywords li:last-of-type::after,
+  ul.courses li:last-of-type::after {
+    content: "";
+  }
+  .level em {
+    font-style: normal;
+    padding: 0.1em 0;
+  }
+  .level .bar {
+    display: none;
+  }
+  #profiles .item {
+    padding: 0;
+  }
+  .item.display {
+    display: block;
+    opacity: 1 !important;
+  }
+  .fa-map-marker-alt:before {
+    padding-left: 0.1em;
+  }
+}
+
+  </style>
+</head>
+<body>
+<div id="resume">
+<header id="header" class="clear">
+<img class="image" src="https://avatars2.githubusercontent.com/u/29492972?s&#x3D;460&amp;u&#x3D;3ad679abe9cc4d1f937250b9c5e7297e7a7cc2d0&amp;v&#x3D;4" alt="Jose Scarnatto" />
+<div class="middle">
+<h1 class="name">Jose Maria Scarnatto</h1>
+<h2 class="label">Backend Developer</h2>
+</div>
+<span class="location">
+<span class="city">SLA UTC-3</span>
+</span>
+<div id="contact">
+<div class="website">
+<span class="fas fa-external-link-alt"></span>
+<a target="_blank" target="_blank" href="https://jmscarnatto.in">https://jmscarnatto.in</a>
+</div>
+<div class="email">
+<span class="far fa-envelope"></span>
+<a href="/cdn-cgi/l/email-protection#f3928096969e809b81968ab3949e929a9fdd909c9e"><span class="__cf_email__" data-cfemail="3b5a485e5e564853495e427b5c565a525715585456">[email&#160;protected]</span></a>
+</div>
+</div>
+<div id="profiles">
+<div class="item">
+<div class="username">
+<span class="fab fa-twitter twitter social"></span>
+<span class="url">
+<a target="_blank" href="https://twitter.com/jmscarnatto">jmscarnatto</a>
+</span>
+</div>
+</div>
+<div class="item">
+<div class="username">
+<span class="fab fa-github github social"></span>
+<span class="url">
+<a target="_blank" href="https://github.com/jmscarnatto">jmscarnatto</a>
+</span>
+</div>
+</div>
+<div class="item">
+<div class="username">
+<span class="fab fa-linkedin linkedin social"></span>
+<span class="url">
+<a target="_blank" href="https://www.linkedin.com/in/jmscarnatto/">Jose Maria Scarnatto</a>
+</span>
+</div>
+</div>
+</div>
+</header>
+<section class="section">
+<section class="main-summary">
+<div><p>Hi ! I am Jose. I'm a Web Development engineer, passionate about technology. I have strong analytical skills and good knowledge in the areas of data analysis and process improvement for business and oil and Engineering industries. My aim is to build a career within an IT department to contribute to the success and evolution of a company with the use of new technologies and/or strategies to improve its efficiency in order to achieve objectives, and as a whole gain practical experience that will allow me to put into practice my theoretical and practical knowledge</p></div>
+</section>
+</section>
+<section class="section">
+<header>
+<h2 class='section-title'>Skills</h2>
+</header>
+<section id="skills">
+<div class="item">
+<div class="level master">
+<em>Proficient</em>
+<div class="bar"></div>
+</div>
+<ul class="keywords">
+<li>PHP</li>
+<li>Codeigniter</li>
+<li>Mysql</li>
+<li>Node.js</li>
+<li>Websockets</li>
+</ul>
+</div>
+<div class="item">
+<div class="level intermediate">
+<em>Intermediate</em>
+<div class="bar"></div>
+</div>
+<ul class="keywords">
+<li>Docker</li>
+<li>Vue.js</li>
+<li>Apis</li>
+<li>Nginx</li>
+</ul>
+</div>
+<div class="item">
+<div class="level beginner">
+<em>Beginner</em>
+<div class="bar"></div>
+</div>
+<ul class="keywords">
+<li>Python</li>
+<li>Flask</li>
+<li>Swagger</li>
+<li>Jest</li>
+</ul>
+</div>
+</section>
+</section>
+<section class="section">
+<header>
+<h2 class='section-title'>Work Experience <span class="item-count">(2)</span></h2>
+</header>
+<section id="work">
+<section class="work-item">
+<input id="work-item-0" type="checkbox" class="toggle-item" checked="checked" />
+<label for="work-item-0"></label>
+<header class="clear">
+<div class="position">CEO - Founder</div>
+<div class="company">Airecanal</div>
+<div class="date">
+<span class="startDate">May 2015</span>
+<span class="endDate">- Dec 2020</span>
+</div>
+</header>
+<span class="location">
+<span class="fas fa-map-marker-alt"></span>
+</span>
+<span class="website">
+<a target="_blank" href="https://airecanal.com/">https://airecanal.com/</a>
+</span> <div class="item" id="work-item">
+<div class="summary"><p>Launching and development of an own entrepreneurship in the telecommunications heading. Internet service provider.</p></div>
+<ul class="highlights">
+<li><p><strong><u>Project</u>: CRM specifically for Internet Service Providers.</strong> 
+The client management system was created using a microservices architecture using Docker together with Vultr cloud services and load balancer PM2. The front-end rendering was server-side using Codeigniter as PHP framework for the core of the application and Node.js for the realtime features with websockets, such as tracking data traffic, number of connected hosts, cronjobs, notifications of highlighted events via telegram bots, etc.  Mysql was used as the database engine for, among other things, customer statistics and company accounting. For this we used write and read replicas, periodic remote backups, triggers and best practices in terms of security and performance.
+<strong><u>Technologies used</u></strong>: NodeJS, Websockets, Iframes, Apis, microservices, PHP, CodeIgniter, MySQL, Docker, Telegram Bots, Mikronode, PM2.
+</p></li>
+</ul>
+</div>
+</section>
+<section class="work-item">
+<input id="work-item-1" type="checkbox" class="toggle-item" />
+<label for="work-item-1"></label>
+<header class="clear">
+<div class="position">Process Engineer</div>
+<div class="company">Linde Gases</div>
+<div class="date">
+<span class="startDate">Oct 2006</span>
+<span class="endDate">- Apr 2015</span>
+</div>
+</header>
+<span class="location">
+<span class="fas fa-map-marker-alt"></span>
+</span>
+<span class="website">
+<a target="_blank" href="https://linde.com">https://linde.com</a>
+</span> <div class="item" id="work-item">
+<div class="summary"><p>Supervision, control and operation of fourteen air separation units (ASU). ASU plant modeling specialist. Development and implementation of an advanced process control system for increase productivity (non-branded system). Development of thermo dynamical calculations tools for air separation units (equipment efficiencies, cooling water systems, etc.) Training new staff for plant operations (Colombia, Brazil, Chile, Peru, Ecuador, Venezuela & Argentina. Control system improvements oriented to remote operations (trends, alarms, events, overviews, etc.) Process Safety Lead Auditor. Conduct surveys all around South America. Commissioning leader for cryogenic and non-cryogenic air separation plant. Six sigma projects. Expert support. Advanced experience in cooling water systems.  Air separation process optimization for several facilities located in 8 countries in South America. Remote Operation specialist. Team member of the first RO Center in South America. Design and implementation of new paradigm in control processes. Preform trainings in good practices for air separation units for new collaborators. Web integration. Innovative web 2.0 development for industrial processes and real time KPI's monitoring. Beginning in Pilar, Buenos Aires, Argentina (2006-2008). Expatriate to Jundiaí, Sao Paulo, Brazil (from 2009).</p></div>
+<ul class="highlights">
+<li><p><strong><u>Plant efficiency review online</u> : </strong> 
+This real-time dashboard with complex performance indicators was realized without the help of frameworks. Only PHP and the Jquery library were used to handle DOM and asynchronous calls. Mysql was used for statistical purposes using data coming from various engines such as OPC servers, Ihistorian, Excel sheets (VBA) and a small crawler created in VB6 to collect wheater data in the absence of apis at that time
+</p>
+</li>
+<li><p><strong><u>Plant Modeling</u> : </strong> 
+This real-time dashboard with complex performance indicators was realized without the help of frameworks. Only PHP and the Jquery library were used to handle DOM and asynchronous calls. Mysql was used for statistical purposes using data coming from various engines such as OPC servers, Ihistorian, Excel sheets (VBA) and a small crawler created in VB6 to collect wheater data in the absence of apis at that time.
+</p>
+</li>
+<li><p><strong><u>CMS for industrial documents and reports</u> : </strong> 
+This project was made from scratch using pure html, css, javascript and php. Mysql as database engine.</p>
+</li>
+</ul>
+</div>
+</section>
+</section>
+</section>
+<section class="section">
+<header>
+<h2 class='section-title'>Education <span class="item-count">(2)</span></h2>
+</header>
+<section id="education">
+<section class="education-item">
+<header class="clear">
+<div class="header-left">
+<div class="studyType">
+Bachelor's degree
+</div>
+<div class="area">
+Industrial Engineering
+</div>
+<div class="institution">
+Univesidad Nacional de Salta
+</div>
+</div>
+<div class="date">
+<span class="startDate">
+1997
+</span>
+<span class="endDate">
+- 2005
+</span>
+</div>
+</header>
+</section>
+<section class="education-item">
+<header class="clear">
+<div class="header-left">
+<div class="area">
+High School Electromechanical technician
+</div>
+<div class="institution">
+Escuela Albert Einstein
+</div>
+</div>
+<div class="date">
+<span class="startDate">
+1991
+</span>
+<span class="endDate">
+- 1996
+</span>
+</div>
+</header>
+</section>
+</section>
+</section>
+<section class="section">
+<header>
+<h2 class='section-title'>Languages</h2>
+</header>
+<section id="languages">
+<div class="display">
+<h3 class="language">
+Spanish
+</h3>
+<div class="item">
+<div class="level fluency native speaker">
+<em>Native Speaker</em>
+<div class="bar"></div>
+</div>
+</div>
+</div>
+<div class="display">
+<h3 class="language">
+English
+</h3>
+<div class="item">
+<div class="level fluency fluent">
+<em>Fluent</em>
+<div class="bar"></div>
+</div>
+</div>
+</div>
+<div class="display">
+<h3 class="language">
+Portuguese
+</h3>
+<div class="item">
+<div class="level fluency fluent">
+<em>Fluent</em>
+<div class="bar"></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section class="section">
+<header>
+<h2 class='section-title' class='section-title'>Interests</h2>
+</header>
+<section id="interests">
+<div class="item">
+<h3 class="name">
+Electronics 🖥️
+</h3>
+<ul class="keywords">
+<li>web app pentesting</li>
+<li>reverse engineering</li>
+</ul>
+</div>
+<div class="item">
+<h3 class="name">
+Reading Books 📚
+</h3>
+<ul class="keywords">
+<li>goodreads-97128738-aseem</li>
+</ul>
+</div>
+<div class="item">
+<h3 class="name">
+Creating Stuff 💡
+</h3>
+</div>
+<div class="item">
+<h3 class="name">
+Hiking 🏃
+</h3>
+<ul class="keywords">
+<li>Jungas</li>
+<li>strava-47262934</li>
+</ul>
+</div>
+<div class="item">
+<h3 class="name">
+Guitar 🏊
+</h3>
+</div>
+</section>
+</section>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+</body>
+</html>
